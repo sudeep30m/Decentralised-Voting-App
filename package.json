@@ -1,0 +1,16 @@
+{
+  "name": "voting_app",
+  "version": "1.0.0",
+  "description": "A simple voting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethereumjs-testrpc": "^3.0.3",
+    "solc": "^0.4.18",
+    "web3": "^0.20.1"
+  }
+}
