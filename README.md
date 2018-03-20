@@ -6,7 +6,6 @@ For installing dependencies go to the directory and run -
 
 ```
 npm install
-
 ```
 
 For running the code install ganache-cli. On a separate terminal run - <br>
