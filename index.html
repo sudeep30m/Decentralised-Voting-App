@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Hello World DApp</title>
+  <title>Voting DApp</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 </head>
+
 <body class="container">
-  <h1>A Simple Hello World Voting Application</h1>
+  <h1>A Decentralised Voting Application</h1>
   <div class="table-responsive">
-    <table class="table table-bordered">
+    <h3>Candidates</h3>
+    <table class="table table-bordered" id = "candidateTable">
       <thead>
         <tr>
-          <th>Candidate</th>
+          <th> Candidate Id </th>
+          <th> Candidate Name </th>
           <th>Votes</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>Rama</td>
-          <td id="candidate-1"></td>
-        </tr>
-        <tr>
-          <td>Nick</td>
-          <td id="candidate-2"></td>
-        </tr>
-        <tr>
-          <td>Jose</td>
-          <td id="candidate-3"></td>
-        </tr>
+      <tbody id="table-body">
       </tbody>
     </table>
+    <br>
+    <br>
   </div>
-  <input type="text" id="candidate" />
+  <div class="table-responsive">
+      <h3>Voters</h3>
+      <table class="table table-bordered" id = "voterTable">
+        <thead>
+          <tr>
+            <th> Voter Id </th>
+            <th> Voter Name </th>
+            <th>Vote Casted</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+      <br>
+      <br>
+    </div>
+  
+  Candidate Id: <input type="number" id="candidate" /><br>
+  Voter Id:&emsp;&emsp;&emsp;<input type="number" id="voter" /><br><br>
   <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+  <br>
+  <br>
+  <br>
+  <div>
+    Candidate Name :
+    <input type="text" id="candidateName" />
+    <br> Candidate Id &emsp;&nbsp;&nbsp; :
+    <input type="number" id="candidateId" />
+    <br>
+    <br>
+    <a href="#" onclick="addCandidate()" class="btn btn-primary">Add Candidate</a>
+  </div>
+  <br>
+  <br>
+  <div>
+    Voter Name :
+    <input type="text" id="voterName" />
+    <br> Voter Id &emsp;&nbsp;&nbsp; :
+    <input type="number" id="voterId" />
+    <br>
+    <br>
+    <a href="#" onclick="addVoter()" class="btn btn-primary">Add Voter</a>
+  </div>
+
 </body>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="./index.js"></script>
+
 </html>
