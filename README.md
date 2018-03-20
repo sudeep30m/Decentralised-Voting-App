@@ -62,7 +62,7 @@ Set options and deploy contract.
 **from** specifies the account from which transaction cost would be deducted. All accounts on ganache-cli are credited with fake ethers.  
 
 ```
-contractInstance = votingContract.at(deployedContract.address)
+> contractInstance = votingContract.at(deployedContract.address)
 ```
 This will create an instance of smart contract on web3. 
 Open **index.js** and replace the output of deployedContract.address with the address in the code. 
