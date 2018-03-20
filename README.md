@@ -22,7 +22,6 @@ node
 > const solc = require('solc');
 > const fs = require('fs');
 > web3 = new Web3(new > Web3.providers.HttpProvider("http://localhost:8545"));
-
 ```
 To check if ganache - cli is working run - 
 
